@@ -8,65 +8,72 @@
 
     <h1 align="center">Order Your Customized T-shirt</h1>
     <p align="center"><font color="#FF6F61" size="5">"Wear Your Story, One Shirt at a Time!"</font></p>
-    
-    <form action="submit" method="post">
+
+    <form action="submit" method="post" align="center">
         <br>
 
-        <h2><font color="#FF6F61">T-shirt Details</font></h2>
+        <table align="center" border="1" cellpadding="60">
+            <tr>
+                <td>
+                    <h2 align="center"><font color="#FF6F61">T-shirt Details</font></h2>
+                    <br>
+
+                    <label for="tagline">Tagline on the Shirt:</label>
+                    <input type="text" id="tagline" name="tagline" placeholder="Enter your tagline" required><br><br>
+
+                    <label for="color">Color:</label>
+                    <select id="color" name="color" required>
+                        <option value="">Select a color</option>
+                        <option value="white">White</option>
+                        <option value="black">Black</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="pink">Pink</option>
+                        <option value="purple">Purple</option>
+                    </select><br><br>
+
+                    <label for="size">Size:</label>
+                    <select id="size" name="size" required>
+                        <option value="">Select a size</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+                        <option value="xxxl">XXXL</option>
+                    </select><br><br>
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity" required><br><br>
+
+                    <label for="delivery_date">Delivery Date:</label>
+                    <input type="date" id="delivery_date" name="delivery_date" required><br><br><br>
+                    <br><br><br>
+                </td>
+                <td>
+                    <h2 align="center"><font color="#FF6F61">Delivery Details</font></h2>
+                    <br>
+
+                    <label for="name">Recipient's Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter recipient's name" required><br><br>
+
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" placeholder="Enter delivery address" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email address" required><br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter phone number" pattern="[0-9]{10}" required><br><br>
+
+                    <label for="comments">Additional Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Enter any additional comments or special instructions"></textarea><br><br>
+                </td>
+            </tr>
+        </table>
         <br>
-
-        <label for="tagline">Tagline on the Shirt:</label>
-        <input type="text" id="tagline" name="tagline" placeholder="Enter your tagline" required><br><br>
-
-        <label for="color">Color:</label>
-        <select id="color" name="color" required>
-            <option value="">Select a color</option>
-            <option value="white">White</option>
-            <option value="black">Black</option>
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="green">Green</option>
-            <option value="pink">Pink</option>
-            <option value="purple">Purple</option>
-        </select><br><br>
-
-        <label for="size">Size:</label>
-        <select id="size" name="size" required>
-            <option value="">Select a size</option>
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-            <option value="xl">XL</option>
-            <option value="xxl">XXL</option>
-            <option value="xxxl">XXXL</option>
-        </select><br><br>
-
-        <label for="quantity">Quantity:</label>
-        <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity" required><br><br>
-
-        <label for="delivery_date">Delivery Date:</label>
-        <input type="date" id="delivery_date" name="delivery_date" required><br><br>
-        <hr>
         <br>
-
-        <h2><font color="#FF6F61">Delivery Details</font></h2>
-        <br>
-
-        <label for="name">Recipient's Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter recipient's name" required><br><br>
-
-        <label for="address">Address:</label>
-        <input type="text" id="address" name="address" placeholder="Enter delivery address" required><br><br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter email address" required><br><br>
-
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" placeholder="Enter phone number" pattern="[0-9]{10}" required><br><br>
-
-        <label for="comments">Additional Comments:</label><br>
-        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter any additional comments or special instructions"></textarea><br><br>
-
         <input type="submit" value="Submit Order">
         <input type="reset" value="Reset Form">
 
